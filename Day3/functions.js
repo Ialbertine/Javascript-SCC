@@ -11,7 +11,7 @@ let person = {
     name: 'Solange',
     age: 30,
     address: {
-      street: '123 St',
+      street: 'ken St40',
       city: 'Kigali',
       country: 'Rwanda'
     }
@@ -34,4 +34,15 @@ let personinfo = {
   
   for (let key in personinfo) {
     console.log(key + ': ' + personinfo[key]);
+  }
+
+
+  function calculator(operation, num1, num2){
+    let result;
+
+    switch (operation){
+        case '+':
+        result = num1 + num2;
+        break;
+    }
   }
