@@ -15,17 +15,17 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #2e2527;
+    background: linear-gradient(140deg, #282326 0%, rgb(217, 207, 207) 100%);
 }
 
 .container {
     display: grid;
     place-items: center;
     width: 450px;
-    height: 400px;
+    height: 450px;
     border-radius: 20px;
-    background: #eeeeee;
-    box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+    background: linear-gradient(145deg, #716464 0%, #9a7e9b 100%);
+    box-shadow:  2px 0 10px 6px rgb(52, 36, 49);
 }
 
 /*
@@ -54,7 +54,7 @@ body {
     border: 5px solid #f6f3f0;
     transform-style: preserve-3d;
     background: linear-gradient(
-        145deg, #dddbd8, #fff
+        145deg, #e7e1d6, #e6e0e0
     );
 }
 
@@ -107,7 +107,7 @@ body {
     width: -30px;
     height: -30px;
     background: black;
-    margin: -15px 0 0 -15px;
+    margin: -20px 0 0 -15px;
 }
 
 .back::after {
@@ -151,16 +151,32 @@ body {
 
 .roll {
     cursor: pointer;
-    color: #b33951;
-    margin-top: 60px;
-    padding: 6px 12px;
-    border-radius: 3px;
-    font: 700 16px 'Montserrat';
-    border: 2px solid #b33951;
+    background-color: rgb(149, 72, 135);
+    color: black;
+    margin-top: 30px;
+    padding: 15px 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    border: none;
     transition: .4s;
 }
 
 .roll:hover {
-    color: #fff;
-    background: #b33951;
+    background: rgb(128, 0, 66);
+}
+.reset{
+    cursor: pointer;
+    background-color: rgb(149, 72, 135);;
+    color: black;
+    padding: 15px 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    border: none;
+    transition: .4s;
+}
+.reset:hover{
+    background: rgb(128, 0, 66);
+}
+#score{
+    font-size: 18px
 }
